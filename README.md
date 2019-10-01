@@ -8,6 +8,8 @@ C++ design patterns/C++设计模式
 
 观察者模式、
 
+参考：https://blog.csdn.net/liang19890820/article/details/66974516
+
 C++ 英语教程
 
 https://www.tutorialspoint.com/index.htm
