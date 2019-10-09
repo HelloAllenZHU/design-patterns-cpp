@@ -4,7 +4,7 @@
 //懒汉式：程序启动时就创建，优点：简单、线程安全，缺点：提前占用内存
 Singleton *   Singleton::m_pSingleton = new Singleton();
 
-//生命垃圾回收对象(声明之后会析构gc，否则不会，gc会释放单例对象)
+//声明垃圾回收对象(声明之后会析构gc，gc会释放单例对象，未声明则不会)
 Singleton::GC Singleton::GC::gc;
 
 //默认构造函数
