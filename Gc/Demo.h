@@ -1,6 +1,7 @@
 #ifndef DEMO_H
 #define DEMO_H
 
+#include <iostream>
 
 class Demo
 {
@@ -19,7 +20,7 @@ public:
     public:
         ~GC()
         {
-            std::cout << "Singleton::GC垃圾回收类 析构" << std::endl;
+            std::cout << "Singleton::GC destructor" << std::endl;
         }
     };
 };

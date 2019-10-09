@@ -5,7 +5,7 @@ using namespace std;
 
 void xxx()
 {
-    //Demo *pDemo = new Demo();
+    Demo *pDemo = new Demo();
 }
 
 int main(int argc, char *argv[])
