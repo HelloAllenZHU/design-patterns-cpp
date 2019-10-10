@@ -17,7 +17,7 @@ public:
     void setSuccessor( IHandler *successor );
 
     //处理
-    void handle( int price );
+    void handle( std::string product );
 
 private:
     //继任者
@@ -38,7 +38,7 @@ public:
     void setSuccessor( IHandler *successor );
 
     //处理
-    void handle( int price );
+    void handle( std::string product );
 
 private:
     //继任者
@@ -59,7 +59,7 @@ public:
     void setSuccessor( IHandler *successor );
 
     //处理
-    void handle( int price );
+    void handle( std::string product );
 
 private:
     //继任者

@@ -5,7 +5,7 @@
 //构造
 HandlerA::HandlerA()
 {
-    m_pHandler = NULL;
+    m_pHandler = nullptr;
 }
 
 //析构
@@ -21,19 +21,19 @@ void HandlerA::setSuccessor( IHandler *successor )
 }
 
 //处理
-void HandlerA::handle( int price )
+void HandlerA::handle( std::string product )
 {
-    if ( price <= 10 )
-        std::cout << "A 处理 " << price << std::endl;
+    if ( product == "Apple" )
+        std::cout << "执行" << product << "的优惠折扣" << std::endl;
     else
-        m_pHandler->handle( price );
+        m_pHandler->handle( product );
 }
 
 //--------------------------------------HandlerB
 //构造
 HandlerB::HandlerB()
 {
-    m_pHandler = NULL;
+    m_pHandler = nullptr;
 }
 
 //析构
@@ -49,19 +49,19 @@ void HandlerB::setSuccessor( IHandler *successor )
 }
 
 //处理
-void HandlerB::handle( int price )
+void HandlerB::handle( std::string product )
 {
-    if ( price <= 100 )
-        std::cout << "B 处理 " << price  << std::endl;
+    if ( product == "Orange" )
+        std::cout << "执行" << product << "的优惠折扣" << std::endl;
     else
-        m_pHandler->handle( price );
+        m_pHandler->handle( product );
 }
 
 //--------------------------------------HandlerC
 //构造
 HandlerC::HandlerC()
 {
-    m_pHandler = NULL;
+    m_pHandler = nullptr;
 }
 
 //析构
@@ -77,10 +77,10 @@ void HandlerC::setSuccessor( IHandler *successor )
 }
 
 //处理
-void HandlerC::handle( int price )
+void HandlerC::handle( std::string product )
 {
-    if ( price <= 1000 )
-        std::cout << "C 处理 " << price  << std::endl;
+    if ( product == "Banana" )
+        std::cout << "执行" << product << "的优惠折扣" << std::endl;
     else
-        m_pHandler->handle( price );
+        m_pHandler->handle( product );
 }
