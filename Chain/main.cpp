@@ -4,7 +4,7 @@
  * 示例：客户购买商品，每种商品都有各自的优惠折扣，将这些折扣顺序包装成一条链，
  * 当用户购买了A商品时，执行A商品的优惠；购买了B商品时，执行B商品的优惠。
  */
-#include <iostream>
+
 #include "Handler.h"
 
 using namespace std;
