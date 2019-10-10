@@ -3,7 +3,7 @@
 
 #include "ICompany.h"
 
-//公司类
+//公司公共类
 class Company : public ICompany
 {
 public:
@@ -11,7 +11,7 @@ public:
     Company();
 
     //析构
-    ~Company();
+    virtual ~Company();
 
     //校招
     virtual void recruit();
@@ -23,10 +23,10 @@ public:
     virtual void receiveResume();
 
     //面试
-    //virtual void interview() = 0;
+    //virtual void interview();
 
     //录取
-    //virtual void offer() = 0;
+    //virtual void offer();
 };
 
 //阿里巴巴

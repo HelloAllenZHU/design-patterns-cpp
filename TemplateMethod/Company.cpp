@@ -38,13 +38,13 @@ void Company::receiveResume()
 //面试
 void Company::interview()
 {
-    std::cout << "不通用面试" << std::endl;
+    std::cout << "通用面试" << std::endl;
 }
 
 //录取
 void Company::offer()
 {
-    std::cout << "不通用录用" << std::endl;
+    std::cout << "通用录用" << std::endl;
 }*/
 
 //--------------------------------------阿里
