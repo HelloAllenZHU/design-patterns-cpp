@@ -14,17 +14,17 @@ MementoMgr::MementoMgr( Game *pGame )
 MementoMgr::~MementoMgr()
 {
     delete m_pMemento;
-    m_pMemento = NULL;
+    m_pMemento = nullptr;
 }
 
 //写入数据到备忘录数据
 void MementoMgr::writeData()
 {
-    m_pMemento->setData( m_pGame->getData() );
+    m_pMemento->setTime( m_pGame->getTime() );
 }
 
 //从备忘录中读取数据
 void MementoMgr::readData()
 {
-    m_pGame->setData( m_pMemento->getData() );
+    m_pGame->setTime( m_pMemento->getTime() );
 }

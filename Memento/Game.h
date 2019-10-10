@@ -1,6 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <iostream>
+
 //游戏类(需要保存、恢复状态)
 class Game
 {
@@ -12,22 +14,13 @@ public:
     ~Game();
 
     //设置数据
-    void setData( int person );
+    void setTime( std::string time );
 
     //获取数据
-    int getData();
-
-    //开始游戏
-    void startGame();
-
-    //暂停游戏
-    void pauseGame();
-
-    //停止游戏
-    void stopGame();
+    std::string getTime();
 
 private:
-    int m_nPerson;  //当前人数
+    std::string m_strTime;  //时间
 };
 
 #endif // GAME_H

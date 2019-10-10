@@ -4,7 +4,7 @@
 //构造
 Memento::Memento()
 {
-    m_nPerson = 0;
+
 }
 
 //析构
@@ -14,13 +14,13 @@ Memento::~Memento()
 }
 
 //设置数据
-void Memento::setData( int person )
+void Memento::setTime( std::string time )
 {
-    m_nPerson = person;
+    m_strTime = time;
 }
 
 //获取数据
-int Memento::getData()
+std::string Memento::getTime()
 {
-    return m_nPerson;
+    return m_strTime;
 }

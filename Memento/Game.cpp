@@ -3,7 +3,7 @@
 //构造
 Game::Game()
 {
-    m_nPerson= 0;
+    m_strTime = "2000-01-01";
 }
 
 //析构
@@ -13,31 +13,13 @@ Game::~Game()
 }
 
 //设置数据
-void Game::setData( int person )
+void Game::setTime( std::string time )
 {
-    m_nPerson = person;
+    m_strTime = time;
 }
 
 //获取数据
-int Game::getData()
+std::string Game::getTime()
 {
-    return m_nPerson;
-}
-
-//开始游戏
-void Game::startGame()
-{
-    ;
-}
-
-//暂停游戏
-void Game::pauseGame()
-{
-    ;
-}
-
-//停止游戏
-void Game::stopGame()
-{
-    ;
+    return m_strTime;
 }

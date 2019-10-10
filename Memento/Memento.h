@@ -1,7 +1,9 @@
 #ifndef MEMENTO_H
 #define MEMENTO_H
 
-//备忘数据
+#include <iostream>
+
+//备忘数据(要保存、恢复的数据)
 class Memento
 {
 public:
@@ -12,13 +14,13 @@ public:
     ~Memento();
 
     //设置数据
-    void setData( int person );
+    void setTime( std::string time );
 
     //获取数据
-    int getData();
+    std::string getTime();
 
 private:
-    int m_nPerson;  //当前人数
+    std::string m_strTime;  //时间
 };
 
 #endif // MEMENTO_H
