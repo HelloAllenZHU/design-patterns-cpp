@@ -16,7 +16,7 @@ Colleague::~Colleague()
 //发送消息
 void Colleague::sendMessage ( const IMediator *mediator, const std::string &message )
 {
-    if ( mediator != NULL )
+    if ( mediator != nullptr )
         mediator->distributeMessage( this, message );
 }
 

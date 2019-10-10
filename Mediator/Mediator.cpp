@@ -16,13 +16,13 @@ Mediator::~Mediator()
 //注册参与者
 void Mediator::registerCooleague ( IColleague *colleague )
 {
-    m_list_colleague.emplace_back( colleague );
+    m_list_colleague.push_back( colleague );
 }
 
 //注销参与者
 void Mediator::unregisterCooleague ( IColleague *colleague )
 {
-    ;
+    m_list_colleague.remove( colleague );
 }
 
 //广播消息

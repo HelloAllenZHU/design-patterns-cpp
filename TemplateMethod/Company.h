@@ -14,7 +14,7 @@ public:
     ~Company();
 
     //校招
-    virtual void recuit();
+    virtual void recruit();
 
     //宣讲
     virtual void careerTalk();

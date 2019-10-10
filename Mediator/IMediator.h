@@ -1,6 +1,8 @@
 #ifndef IMEDIATOR_H
 #define IMEDIATOR_H
 
+#include <iostream>
+
 class IColleague;
 
 //中介者接口

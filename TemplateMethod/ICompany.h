@@ -5,7 +5,7 @@ class ICompany
 {
 public:
     //校招
-    virtual void recuit() = 0;
+    virtual void recruit() = 0;
 
     //宣讲
     virtual void careerTalk() = 0;

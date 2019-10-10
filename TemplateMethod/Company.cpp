@@ -14,7 +14,7 @@ Company::~Company()
 }
 
 //校招
-void Company::recuit()
+void Company::recruit()
 {
     std::cout << "开始校招" << std::endl;
     careerTalk();

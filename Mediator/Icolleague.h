@@ -1,6 +1,8 @@
 #ifndef ICOLLEAGUE_H
 #define ICOLLEAGUE_H
 
+#include <iostream>
+
 class IMediator;
 
 //同事接口
