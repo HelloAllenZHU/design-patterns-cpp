@@ -6,4 +6,5 @@ CONFIG -= qt
 SOURCES += main.cpp
 
 HEADERS += \
-    IShape.h
+    IShape.h \
+    Shape.h

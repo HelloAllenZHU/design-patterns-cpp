@@ -4,7 +4,7 @@
  */
 
 #include <iostream>
-#include "ishape.h"
+#include "Shape.h"
 
 using namespace std;
 
