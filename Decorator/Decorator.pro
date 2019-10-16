@@ -6,5 +6,7 @@ CONFIG -= qt
 SOURCES += main.cpp
 
 HEADERS += \
+    Decorator.h \
+    Game.h \
     IShape.h \
     Shape.h
