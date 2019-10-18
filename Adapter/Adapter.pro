@@ -3,9 +3,7 @@ CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp \
-    SDCard.cpp \
-    CardReader.cpp
+SOURCES += main.cpp
 
 HEADERS += \
     IUsb.h \
