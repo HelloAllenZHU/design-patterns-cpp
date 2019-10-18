@@ -1,7 +1,7 @@
 /*
  * 当某对象的状态/数据发生变化时，及时通知与之相关的对象进行更新。
  * 例如：用户修改昵称之后，UI上所有与昵称有关的窗口都要动态更新。
- * 将公共状态、数据封装成观察者，其他需要用到这些状态、数据的对象就按需注册、注销监听事件。
+ * 将公共状态、数据封装成Subject，其他需要用到这些状态、数据的对象就按需注册、注销监听事件。
  */
 
 #include <iostream>
@@ -39,9 +39,5 @@ int main(int argc, char *argv[])
     delete pSubject;
     delete pObserver1;
     delete pObserver2;
-    pSubject   = NULL;
-    pObserver1 = NULL;
-    pObserver2 = NULL;
-
     return 0;
 }
