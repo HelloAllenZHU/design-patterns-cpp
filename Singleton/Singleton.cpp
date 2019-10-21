@@ -1,7 +1,7 @@
 
 #include "Singleton.h"
 
-//懒汉式：程序启动时就创建，优点：简单、线程安全，缺点：提前占用内存
+//饿汉式：程序启动时就创建，优点：简单、线程安全，缺点：提前占用内存
 Singleton *   Singleton::m_pSingleton = new Singleton();
 
 //声明垃圾回收对象(声明之后会析构gc，gc会释放单例对象，未声明则不会)
