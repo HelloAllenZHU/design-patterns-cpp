@@ -5,8 +5,6 @@
 #include <list>
 #include "Observer.h"
 
-class IObserver;
-
 //主题接口
 class ISubject
 {
@@ -26,43 +24,36 @@ class Subject : public ISubject
 {
 public:
     //构造
-    Subject()
-    {
+    Subject() {
         m_fPrice = 10.0;
     }
 
     //析构
-    ~Subject()
-    {
+    ~Subject() {
 
     }
 
     //注册观察者
-    void Attach( IObserver *observer )
-    {
+    void Attach( IObserver *observer ) {
         m_list_observer.push_back( observer );
     }
 
     //注销观察者
-    void Detach( IObserver *observer )
-    {
+    void Detach( IObserver *observer ) {
         m_list_observer.remove( observer );
     }
 
     //通知观察者
-    void Notify()
-    {
+    void Notify() {
         std::list<IObserver *>::iterator it = m_list_observer.begin();
-        while ( it != m_list_observer.end() )
-        {
+        while ( it != m_list_observer.end() ) {
             ( *it )->Update( m_fPrice );
             ++it;
         }
     }
 
     //设置价格
-    void SetPrice( float price )
-    {
+    void SetPrice( float price ) {
         m_fPrice = price;
     }
 
