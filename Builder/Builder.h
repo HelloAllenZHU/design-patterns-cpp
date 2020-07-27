@@ -1,4 +1,4 @@
-#ifndef BUILDER_H
+﻿#ifndef BUILDER_H
 #define BUILDER_H
 
 #include "Product.h"
@@ -9,6 +9,7 @@ class Product;
 class IBuilder
 {
 public:
+    virtual ~IBuilder(){}
     //创建cpu
     virtual void buildCpu() = 0;
 

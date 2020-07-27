@@ -1,4 +1,4 @@
-#ifndef DIRECTOR_H
+﻿#ifndef DIRECTOR_H
 #define DIRECTOR_H
 
 #include "Builder.h"

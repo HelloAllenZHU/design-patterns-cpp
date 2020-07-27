@@ -1,4 +1,4 @@
-/*
+﻿/*
  * 将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
  * 例如：有同一套创建流程，它创建一个斗地主游戏房间，也可以创建一个卡五星游戏房间。
  */
@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
     Product *pThinkpad = pBuilderThinkpad->getProduct();
 
     //输出测试
-    std::cout << pMacbook->getCpu() << std::endl;
-    std::cout << pThinkpad->getCpu() << std::endl;
+    std::cout << pMacbook->getCpu().c_str() << std::endl;
+    std::cout << pThinkpad->getCpu().c_str() << std::endl;
 
     //delete pThinkpad;
     //delete pMacbook;

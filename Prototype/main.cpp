@@ -4,7 +4,7 @@
  * 例如：创建一个线程/进程对象，然后clone该线程对象。
  */
 #include <iostream>
-#include "MonkeySun.h"
+#include "Monkey.h"
 
 using namespace std;
 
@@ -12,10 +12,10 @@ int main(int argc, char *argv[])
 {
     cout << "Hello World!" << endl;
 
-    //创建孙悟空
+    //创建Monkey
     IMonkey *pMonkey = new MonkeySun( "sun", "20" );
 
-    //克隆孙悟空
+    //克隆Monkey
     IMonkey *pMonkey1= pMonkey->clone();
     IMonkey *pMonkey2= pMonkey->clone();
 

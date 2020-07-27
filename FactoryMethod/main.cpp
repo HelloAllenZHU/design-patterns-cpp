@@ -22,21 +22,21 @@ int main()
     // 奔驰
     IFactory *pFactory0 = new BenzFactory();
     ICar     *pCar0     = pFactory0->CreateCar();
-    std::cout << "Benz factory: " << pCar0->Name() << std::endl;
+    std::cout << "Benz factory: " << pCar0->Run() << std::endl;
     delete pCar0;
     delete pFactory0;
 
     // 宝马
     IFactory *pFactory1 = new BmwFactory();
     ICar     *pCar1     = pFactory1->CreateCar();
-    std::cout << "Bmw factory: " << pCar1->Name() << std::endl;
+    std::cout << "Bmw factory: " << pCar1->Run() << std::endl;
     delete pCar1;
     delete pFactory1;
 
     // 奥迪
     IFactory *pFactory2 = new AudiFactory();
     ICar     *pCar2     = pFactory2->CreateCar();
-    std::cout << "Audi factory: " << pCar2->Name() << std::endl;
+    std::cout << "Audi factory: " << pCar2->Run() << std::endl;
     delete pCar2;
     delete pFactory2;
 

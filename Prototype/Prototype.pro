@@ -3,9 +3,7 @@ CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp \
-    MonkeySun.cpp
+SOURCES += main.cpp
 
 HEADERS += \
-    MonkeySun.h \
-    IMonkey.h
+    Monkey.h

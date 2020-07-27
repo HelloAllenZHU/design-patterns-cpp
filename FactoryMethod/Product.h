@@ -7,15 +7,16 @@
 class ICar
 {
 public:
-    virtual std::string Name() = 0;  // 汽车名称
+    virtual ~ICar(){}
+    virtual std::string Run() = 0;  // 汽车跑动
 };
 
 // 奔驰汽车
 class BenzCar : public ICar
 {
 public:
-    std::string Name() {
-        return "Benz Car";
+    std::string Run() {
+        return "Benz Car Run...";
     }
 };
 
@@ -23,8 +24,8 @@ public:
 class BmwCar : public ICar
 {
 public:
-    std::string Name() {
-        return "Bmw Car";
+    std::string Run() {
+        return "Bmw Car Run...";
     }
 };
 
@@ -32,8 +33,8 @@ public:
 class AudiCar : public ICar
 {
 public:
-    std::string Name() {
-        return "Audi Car";
+    std::string Run() {
+        return "Audi Car Run...";
     }
 };
 

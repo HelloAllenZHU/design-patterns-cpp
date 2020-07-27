@@ -7,6 +7,7 @@
 class ICar
 {
 public:
+    virtual ~ICar(){}
     virtual std::string Name() = 0;  // 汽车名称
 };
 
@@ -14,6 +15,7 @@ public:
 class IBike
 {
 public:
+    virtual ~IBike(){}
     virtual std::string Name() = 0;  // 自行车名称
 };
 

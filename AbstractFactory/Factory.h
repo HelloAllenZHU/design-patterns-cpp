@@ -13,6 +13,7 @@ public:
         AUDI_FACTORY    // 奥迪工厂
     };
 
+    virtual ~IFactory(){}
     virtual ICar     * CreateCar()  = 0;                        // 生产汽车
     virtual IBike    * CreateBike() = 0;                        // 生产自行车
     static  IFactory * CreateFactory( FACTORY_TYPE factory );   // 创建工厂
